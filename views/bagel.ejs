@@ -1,0 +1,184 @@
+<% include partials/header %>
+    <link rel="stylesheet" type="text/css" href="sam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico" rel="stylesheet">
+        <style>
+        body{
+            height: 100%;
+            margin: 0;
+       /*   background-image: url("./images/body.jpg"); */
+         
+        font-family: 'Pacifico', cursive;
+        background-image: url("/images/1.png");
+
+                
+        }
+      /*  @font-face{
+            font-family: "Podriq-Thick";
+        }*/
+
+
+     .header{
+        display: block;
+     }
+     
+    hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.full{
+    border-left: 2px solid black;
+    border-right:2px solid black;
+}
+.box{
+    border: 2px solid #654321;
+  background-color: #aa6434;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+        .bg {
+            
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        #main{
+            width: 100%;
+            height: 340px; 
+            background-size: cover;
+            transition: 2s;
+            padding:0;
+            margin:0;
+
+        }
+        .h1{
+            display:flex;
+            align-items:center;
+            color: white;
+        }
+        .box img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+        .topnav{
+            background-color: #990000;
+            height: 50px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .topnav h3{
+            padding: 5px;
+            color: gainsboro;
+        }
+        .heading{
+            font-family: bakery;
+            src: url("css/fonts/Podriq-Thick.otf");
+        }
+        .bakery{
+        }
+        #rcorners3 {
+    border-radius: 25px;
+    background-image: url("../images/123123.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 500px;
+    height: 600px;    
+}
+    </style>
+
+    </head>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <div>
+            <div style="font-family: 'Josefin Slab', serif;">
+                
+                <header style="display: block;">
+                <nav style="background: linear-gradient(to bottom, #663300 0%, #ffffff 150%);
+    ; padding: 5px;border-bottom: 2px solid brown" class="navbar navbar-expand-lg navbar-light ">
+      </button>
+      <div style="font-size: 20px; color: black" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="./index.html"><img style="align-self: center; height: 70px" src="/images/logo.png"></a> 
+          <a style="margin-top: 15px" class="nav-item nav-link active" href="/"><b>Home</b><span class="sr-only">(current)</span></a>
+          <a style="margin-top: 15px" class="nav-item nav-link" href="products"><b>Menu</b></a>
+          <a style="margin-top: 15px" class="nav-item nav-link" href="awards"><b>Awards</b></a>
+          <a style="margin-top: 15px" class="nav-item nav-link" href="orders"><b>Order</b></a>
+
+
+          <a style="margin-top: 15px" class="nav-item nav-link" href="contact"><b>Contact Us</u></b></a>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+          <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search" style="width: 300px;">
+                     
+                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                    
+                   
+    <div class="col-auto">
+    <button style="margin-right:5px" class="btn btn-secondary">Login</button>
+    
+   <a href="signup"><button style="float:right" class="btn btn-secondary">Sign-Up</button></a>
+  </div>
+
+        </div>
+      </div>
+            </div>
+    </nav>
+    </header>
+<div class="container full" style="background:linear-gradient(to bottom, #edc078 0%, #663300 250%);">  
+
+<br>
+<h1 class="display-4" style="text-align:center;"><U>Bagels</U></h1>
+<br>
+
+<table class="table table-striped table-hover" style="margin:auto; border:2px solid black; font-size:40px;padding:5px;">
+   <tr>
+      <th>Product</th><th>Price</th>
+   </tr>
+
+   <% for (var i = 0; i < L; i++) { %>
+    <tr>
+      <td><%= row[i].ProductName %></td>
+      <td><%= row[i].Price %></td>
+    </tr>    
+   <% } %>
+</table>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<% include partials/footer %>
+

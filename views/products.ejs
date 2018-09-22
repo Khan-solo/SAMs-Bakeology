@@ -1,0 +1,398 @@
+<% include partials/header %>
+  <link rel="stylesheet" type="text/css" href="sam.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Pacifico" rel="stylesheet">
+      <style>
+      body{
+        height: 100%;
+        margin: 0;
+       background-image: url("/images/1.png");         
+        font-family: 'Pacifico', cursive;
+
+                
+      }
+      /*  @font-face{
+            font-family: "Podriq-Thick";
+        }*/
+
+
+     .header{
+        display: block;
+     }
+     
+    hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.full{
+    border-left: 2px solid black;
+    border-right:2px solid black;
+}
+.box{
+    border: 2px solid #654321;
+  background-color: #aa6434;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+    border: 2px solid black;
+    margin: 3px;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+    border: 2px solid black;
+    margin: 3px;
+    width:  210px;
+    height: 200px;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+    border: 2px solid black;
+    margin: 3px;
+    width:  210px;
+    height: 200px;
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+    border: 2px solid black;
+    margin: 3px;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+    color:black;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+      .bg {
+        
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+
+        #main{
+            width: 100%;
+            height: 340px; 
+            background-size: cover;
+            transition: 2s;
+            padding:0;
+            margin:0;
+
+        }
+      .h1{
+        display:flex;
+        align-items:center;
+        color: white;
+      }
+      .box img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+      .topnav{
+        background-color: #990000;
+        height: 50px;
+        margin-top: 0;
+            margin-bottom: 0;
+      }
+      .topnav h3{
+        padding: 5px;
+        color: gainsboro;
+      }
+        .heading{
+            font-family: bakery;
+            src: url("css/fonts/Podriq-Thick.otf");
+        }
+        .bakery{
+        }
+        #rcorners3 {
+    border-radius: 25px;
+    background-image: url("../images/123123.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 500px;
+    height: 600px;    
+}
+.thumbnail{
+  border: 2px solid black;
+  margin: 3px;
+}
+    </style>
+
+    </head>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <div>
+        <div style="font-family: 'Josefin Slab', serif;">
+            
+                <header style="display: block;">
+          <nav style="background: linear-gradient(to bottom, #663300 0%, #ffffff 150%);
+    ; padding: 5px;border-bottom: 2px solid brown" class="navbar navbar-expand-lg navbar-light ">
+      </button>
+      <div style="font-size: 20px; color: black" class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="./index.html"><img style="align-self: center; height: 70px" src="/images/logo.png"></a> 
+          <a style="margin-top: 15px" class="nav-item nav-link" href="/"><b>Home</b><span class="sr-only">(current)</span></a>
+          <a style="margin-top: 15px" class="nav-item nav-link active" href="products"><b>Menu</b></a>
+          <a style="margin-top: 15px" class="nav-item nav-link" href="awards"><b>Awards</b></a>
+          <a style="margin-top: 15px" class="nav-item nav-link" href="orders"><b>Order</b></a>
+
+
+          <a style="margin-top: 15px" class="nav-item nav-link" href="contact"><b>Contact Us</u></b></a>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+          <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search" style="width: 300px;">
+                     
+                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                    
+                   
+    <div class="col-auto">
+    <button style="margin-right:5px" class="btn btn-secondary">Login</button>
+    
+   <a href="signup"><button style="float:right" class="btn btn-secondary">Sign-Up</button></a>
+  </div>
+
+        </div>
+      </div>
+            </div>
+    </nav>
+    </header>
+     <div class="container" style="border-left:2px solid black; border-right:2px solid black; margin-bottom; 0;">
+         
+         
+         
+     </div>
+
+     <div class="container full" style="background:linear-gradient(to bottom, #edc078 0%, #663300 250%);">
+     <BR>
+         <h1 class="display-4" style="text-align:center;"><U>Categories</U></h1>
+         <br>
+
+
+     <ul id="rig">
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/bagel">
+            <img class="rig-img" src="/images/bagel.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">BAGEL</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/bread">
+            <img class="rig-img" src="https://d2gk7xgygi98cy.cloudfront.net/5643-3-large.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">BREAD</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/cake">
+            <img class="rig-img" src="/images/cake.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">CAKE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/cookie">
+            <img class="rig-img" src="/images/cookies.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">COOKIE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/donut">
+            <img class="rig-img" src="/images/donuts.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">DONUT</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/muffin">
+            <img class="rig-img" src="/images/muffin.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">MUFFIN</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/pancake">
+            <img class="rig-img" src="/images/pancakes.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">PANCAKE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/pastry">
+            <img class="rig-img" src="/images/pastry.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">PASTRY</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/pie">
+            <img class="rig-img" src="/images/pie.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">PIE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/quiche">
+            <img class="rig-img" src="/images/q1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">QUICHE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/waffle">
+            <img class="rig-img" src="/images/waffles.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">WAFFLE</span>
+        </a>
+    </li>
+    <li class="thumbnail">
+        <a class="rig-cell thumbnail" href="/special">
+            <img class="rig-img" src="data:image/jpeg;base64,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">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">SPECIAL</span>
+        </a>
+    </li>
+</ul>
+
+
+<br>
+
+
+
+  </div>
+    
+
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<% include partials/footer %>
